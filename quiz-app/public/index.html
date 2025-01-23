@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Quiz App</h1>
+        <div id="quiz-box">
+            <!-- Question will be displayed here -->
+            <div id="question"></div>
+            <div id="options">
+                <button class="option" id="option1" onclick="checkAnswer(1)"></button>
+                <button class="option" id="option2" onclick="checkAnswer(2)"></button>
+                <button class="option" id="option3" onclick="checkAnswer(3)"></button>
+                <button class="option" id="option4" onclick="checkAnswer(4)"></button>
+            </div>
+            <!-- Result will be displayed here -->
+            <div id="result"></div>
+            <!-- Next Button, hidden initially -->
+            <button id="next-button" onclick="nextQuestion()" style="display: none;">Next Question</button>
+            <!-- Back to Quiz button, initially hidden and shown only when quiz is completed -->
+            <button id="back-to-quiz" onclick="backToQuiz()" style="display: none;">Back to Quiz</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

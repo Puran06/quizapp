@@ -1,0 +1,147 @@
+/* Global Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e0f7fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container for the quiz */
+.quiz-container {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    width: 350px;
+    text-align: center;
+    position: relative;
+}
+
+/* Heading styling */
+h1 {
+    color: #00796b;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+/* Styling the question text */
+#question {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #00796b;
+}
+
+/* Option buttons styling */
+.option {
+    display: block;
+    width: 90%;
+    padding: 15px;
+    margin: 10px auto;
+    border: 2px solid #00796b;
+    background-color: #ffffff;
+    font-size: 18px;
+    color: #00796b;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+/* Hover effect for options */
+.option:hover {
+    background-color: #00796b;
+    color: #ffffff;
+}
+
+/* Next button styling */
+#next-button {
+    background-color: #00796b;
+    color: white;
+    font-size: 18px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    display: none;
+    transition: 0.3s;
+}
+
+#next-button:hover {
+    background-color: #004d40;
+}
+
+/* Result text styling */
+#result {
+    font-size: 18px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Back to Quiz button styling */
+#back-to-quiz {
+    background-color: #00796b;
+    color: white;
+    font-size: 18px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.3s;
+    display: none;
+}
+
+#back-to-quiz:hover {
+    background-color: #004d40;
+}
+
+/* Correct and Incorrect answers */
+.green {
+    background-color: green !important;
+    color: white;
+}
+
+.red {
+    background-color: red !important;
+    color: white;
+}
+
+/* Result text color styling */
+#result.correct {
+    color: green;
+}
+
+#result.incorrect {
+    color: red;
+}
+
+/* Restart Button Styling */
+#restart-quiz {
+    background-color: #00796b; /* Primary button color */
+    color: white; /* Text color */
+    font-size: 18px; /* Font size */
+    padding: 12px 20px; /* Padding around the button */
+    border: none; /* Remove default border */
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+}
+
+/* Hover effect for Restart Button */
+#restart-quiz:hover {
+    background-color: #004d40; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly enlarge the button */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+/* Add spacing around Restart Button */
+#restart-quiz {
+    margin-top: 20px; /* Add space above */
+    margin-bottom: 10px; /* Add space below */
+}
+
